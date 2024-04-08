@@ -8,7 +8,6 @@ import { BrowserRouter } from "react-router-dom";
 import Navbar from "./components/navbar/Navbar";
 import Technologies from "./components/tech/Technologies";
 import Projects from "./components/projects/Projects";
-import Popoup from "./components/projects/Popup";
 
 const siteProps = {
   greeting: "Hello, I'm",
