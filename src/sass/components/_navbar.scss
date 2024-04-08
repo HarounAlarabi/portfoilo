@@ -1,0 +1,133 @@
+.navbar {
+
+    position: fixed;
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    width: 100%;
+    color: $flashWhite;
+    background: $color-nav;
+    padding: 1rem 0rem;
+    margin: 0rem 0rem;
+    top: 0;
+    z-index: 10;
+    box-shadow: 0 0 10px rgba(212, 207, 207, 0.5);
+    height: 10rem;
+
+
+
+    &__logo {
+        position: absolute;
+        top: 2.5rem;
+        left: 15rem;
+
+        @media screen and (max-width:$md) {
+            z-index: 2000;
+        }
+
+        &-img {
+            width: 9rem;
+            height: 6rem;
+        }
+
+        @media screen and (max-width: $lg) {
+            left: 10rem;
+
+        }
+
+        @media screen and (max-width: $md) {
+            left: 1rem;
+
+        }
+    }
+
+
+
+    .open {
+        display: flex;
+
+        @media screen and (max-width: $md) {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            text-align: center;
+            position: fixed;
+            top: -5rem;
+            vertical-align: middle;
+            width: 100%;
+            margin: 0;
+            height: 100%;
+            background-color: rgba($color-nav, 5);
+            color: aqua;
+            transition: top 0.3s ease;
+            z-index: 1000;
+            overflow-y: hidden;
+        }
+    }
+
+    &__menu {
+        display: flex;
+        margin-right: 20rem;
+        gap: 4rem;
+
+        @media screen and (max-width: $md) {
+            display: none;
+        }
+
+        &-item {
+            list-style: none;
+            padding: 1rem;
+            font-size: 2rem;
+            font-family: "Josefin Sans", sans-serif;
+            font-weight: 800;
+
+            cursor: pointer;
+            transition: color 0.3s ease;
+
+            &:hover {
+                color: $platinum;
+                text-decoration: underline;
+
+            }
+
+            &--link {
+                text-decoration: none;
+
+                color: inherit;
+            }
+
+
+        }
+
+
+    }
+
+    &__toggle {
+        position: absolute;
+        top: 4rem;
+        right: 2rem;
+        height: 5rem;
+        width: 5rem;
+        background: none;
+        border: 0;
+        display: none;
+
+        @media screen and (max-width:$md) {
+            z-index: 2000;
+            display: block;
+
+
+        }
+
+        &-icon {
+            width: 4rem;
+            position: absolute;
+            top: 0rem;
+            right: 1rem;
+            fill: white;
+        }
+
+
+    }
+
+}

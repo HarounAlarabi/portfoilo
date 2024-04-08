@@ -1,0 +1,128 @@
+.main {
+  margin-top: 12rem;
+  height: 80vh;
+  background-image: linear-gradient(120deg,
+      rgba($color-primary-dark, 5) 0%,
+      rgba($color-primary-dark, 0.8) 55%,
+      transparent 50%),
+    url("../../images/portBackgroun-2.jpg");
+  padding: 3rem;
+
+  background-size: cover;
+  position: relative;
+  background-position: 30% 75%;
+  font-family: $font-name;
+
+
+  &-heading {
+    position: absolute;
+    top: 50%;
+    left: 25%;
+    transform: translate(-50%, -50%);
+    text-align: left;
+
+    @media (max-width: $xxl) {
+      left: 40%;
+
+    }
+  }
+}
+
+.heading-text {
+  text-transform: uppercase;
+  color: $color-white;
+  backface-visibility: hidden;
+  margin-bottom: 6rem;
+
+
+  &--main,
+  &--greeting {
+    font-size: 5rem;
+
+    display: block;
+    font-weight: 1000;
+    padding: 0rem;
+    animation: moveInLeft 2s ease-out;
+    -webkit-animation: moveInLeft 2s ease-out;
+
+  }
+
+
+
+  &--sub {
+    display: block;
+    font-size: 2rem;
+    letter-spacing: 0.8rem;
+    font-weight: 400;
+    animation: moveInRight 2s ease-out;
+    margin-top: 3rem;
+    font-family: lato;
+  }
+}
+
+@keyframes moveInLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(-10rem);
+  }
+
+  80% {
+    transform: translateX(1rem);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translate(0);
+  }
+}
+
+@keyframes moveInRight {
+  0% {
+    opacity: 0;
+    transform: translateX(10rem);
+  }
+
+  80% {
+    transform: translateX(1rem);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translate(0);
+  }
+}
+
+
+.arrow {
+  position: absolute;
+  top: 80%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.btn {
+
+  &:link,
+  &:visited {
+    padding: 1rem 1rem !important;
+    margin-top: 5rem;
+    position: relative;
+    display: inline-block;
+    transition: all 0.2s;
+    cursor: pointer;
+  }
+
+  &__icon {
+
+    transition: all 0.2s;
+    fill: rgb(255, 255, 255);
+    width: 3rem;
+    height: 3rem;
+
+
+  }
+
+  &__icon:hover {
+    transform: translateY(1rem);
+  }
+}

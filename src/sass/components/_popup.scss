@@ -1,0 +1,121 @@
+.popup {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+
+    height: 28rem;
+    padding: 3rem 2rem;
+    background-color: rgba($taupe, 4);
+    box-shadow: 0 3rem 6rem rgba(0, 0, 0, 0.1);
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) skewX(-12deg);
+    z-index: 2000;
+
+    @media screen and (max-width:$xxl) {
+        height: 28rem;
+        width: 60rem;
+        padding: 1rem 2rem 3rem 2rem;
+    }
+
+
+
+    &__close {
+        grid-column: 6;
+        position: absolute;
+        top: 1rem;
+        right: 2rem;
+        background-color: transparent;
+        border: none;
+        font-size: 3rem;
+
+        cursor: pointer;
+    }
+
+    &__left {
+        grid-column: 1 / span 2;
+
+
+        transform: skewX(12deg);
+
+        &-img {
+
+            width: 90%;
+            height: 100%;
+            border-radius: 70%;
+            position: relative;
+            shape-outside: circle(90% at 50% 50%);
+        }
+    }
+
+    &__right {
+        grid-column: 3 / span 3;
+        transform: skewX(12deg);
+
+        &-title {
+            font-size: 2rem;
+            margin: 2rem;
+
+        }
+
+        &-text {
+            font-size: 1.5rem;
+            margin: 2rem;
+            shape-outside: circle(90% at 50% 50%);
+
+        }
+
+
+    }
+
+    &__icons {
+        grid-column: 6;
+        justify-self: center;
+        align-self: center;
+        display: flex;
+        flex-direction: column;
+        transform: skewX(12deg);
+
+
+
+        &-icon {
+            display: block;
+            padding: 1rem;
+
+            width: 4rem;
+            height: 4rem;
+
+        }
+    }
+
+    &__techs {
+        grid-column: 1/ -1;
+        transform: skewX(12deg);
+        display: flex;
+
+        justify-content: center;
+        align-items: center;
+        gap: 2rem;
+
+
+    }
+}
+
+.projectIcons {
+    display: flex;
+
+
+    &__heading {
+        font-size: 2rem;
+        margin: 2rem;
+    }
+
+    &__content {
+        &--icon {
+            width: 3rem;
+            height: 3rem;
+            border-radius: 50%;
+            margin: 1rem;
+        }
+    }
+}
