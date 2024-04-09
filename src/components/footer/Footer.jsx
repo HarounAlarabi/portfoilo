@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 function Footer() {
 
     return (
-        <div className="footer">
+        <div className="footer" id='contact'>
             <Link to='https://www.githup.com/harounalarabi'>
                 <Icon icon="github" className='footer__icon' />
             </Link>

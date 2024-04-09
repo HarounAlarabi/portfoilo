@@ -11,7 +11,7 @@ const projectList = [
     title: "Teacher PET",
     description:
       "Collaboration project with a team of four to create a web application to automate the data gathering from teacher forms and develop a form accessible to pupils help who are visually impaired.",
-    url: "https://github.com/microsoft/web-dev-for-beginners",
+    url: "https://teachers-pet.netlify.app/",
     image: techerPetImg,
     type: "fullstack"
   },
@@ -52,7 +52,7 @@ const Projects = () => {
   };
 
   return (
-    <section className="projects" id="portfolio">
+    <section className="projects" id="projects">
       <div className="projects__desc">
         <h2 className="projects__desc-title h2__heading">Projects</h2>
         <p className="projects__desc-text text">{description}</p>
