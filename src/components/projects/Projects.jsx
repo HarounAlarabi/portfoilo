@@ -5,6 +5,7 @@ import Popup from "./Popup";
 import image from "../../assets/backgrounds/Natours.png";
 import techerPetImg from "../../assets/backgrounds/techerPet.png";
 import videorecommandation from "../../assets/backgrounds/videsrecomadtion.png";
+import tvshow from "../../assets/backgrounds/tvshows.png";
 
 const projectList = [
   {
@@ -22,6 +23,14 @@ const projectList = [
     image: videorecommandation,
     type: "fullstack"
 
+  },
+  {
+    title: 'Tv Shows',
+    description:
+      "A web application that allows users to search for tv and the user can choose any episodes of the show from the dropdown list.every episode has a summary of the episode. The application is built using React.",
+    url: "https://main--eloquent-pothos-4f23a6.netlify.app/",
+    image: tvshow,
+    type: "frontend"
   },
   {
     title: "Natours",
