@@ -5,7 +5,7 @@ import Popup from "./Popup";
 import image from "../../assets/backgrounds/Natours.png";
 import techerPetImg from "../../assets/backgrounds/techerPet.png";
 import videorecommandation from "../../assets/backgrounds/videsrecomadtion.png";
-import tvshow from "../../assets/backgrounds/tvshows.png";
+import tvshow from "../../assets/backgrounds/tvshow.png";
 
 const projectList = [
   {
